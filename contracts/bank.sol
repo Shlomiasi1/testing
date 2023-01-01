@@ -10,7 +10,6 @@ contract bank {
     require(getConversionRate(msg.value)>= minimumUsd, "Didn't send enough!");
     funders.push(msg.sender);
     addressToAmountFunded[msg.sender] = msg.value;
-
     }
 
 }
